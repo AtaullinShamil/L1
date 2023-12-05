@@ -3,7 +3,9 @@ package main
 import "fmt"
 
 func checkType(param interface{}) {
+	// Проверяем тип
 	switch v := param.(type) {
+	// Используем свитч для сравнения значений
 	case int:
 		fmt.Println(v, " is int")
 	case string:
